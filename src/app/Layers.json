@@ -1,0 +1,10 @@
+{
+    "layers": [{
+            "id": "NS_Water",
+            "title": "Nova Scotia Topographic Database (NSTB) Water Theme",
+            "url": "https://nsgiwa.novascotia.ca/arcgis/rest/services/BASE/BASE_NSTDB_10k_Water_WM84/MapServer",
+            "legend": "",
+            "visible": true,
+            "opacity": 1
+        }]
+}

@@ -1,0 +1,42 @@
+/* app/widgets/css/LayerWidget.css */
+
+.layerWidget {
+    font-weight: bold;
+    font-family: sans-serif;
+    min-width: 260px;
+}
+.layerWidget .description {
+    margin: 2% 0;
+}
+.layerWidget .description p {
+    text-align: center;
+    margin: 0;
+    font-size: 12px;
+}
+.tocDiv {
+    display: block;
+    height: 35px;
+    width: 100%;
+/*        overflow: visible;*/
+    margin: 5px auto;
+}
+.chkLayer {
+    margin: 1% auto;
+    clear: left;
+    float: left;
+}
+.lblLayer {
+    width: 50%;
+    margin-left: 5px;
+    padding: 5px 0 5px 0;
+    float: left;
+    /*    width: 210px;*/
+    /*    font-size: 1em;*/
+}
+.selLayer {
+    margin: 1%;
+    /*    border: .2em solid red;*/
+    float: right;
+    clear: right;
+    width: 70px;
+}

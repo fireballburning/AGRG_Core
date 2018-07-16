@@ -1,0 +1,25 @@
+{
+  "name": "agrg_core",
+  "version": "1.0.0",
+  "description": "A core template for ESRI JavaScript web map applications made by the Applied Geomatics Research Group of the Nova Scotia Community College.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fireballburning/AGRG_Core.git"
+  },
+  "author": "David Kristiansen",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/fireballburning/AGRG_Core/issues"
+  },
+  "homepage": "https://github.com/fireballburning/AGRG_Core#readme",
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-eslint": "^21.0.0",
+    "grunt-remove-logging": "^0.2.0",
+    "grunt-stripcomments": "^0.7.2"
+  }
+}

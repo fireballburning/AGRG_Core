@@ -1,0 +1,259 @@
+/* Main CSS styling */
+
+/* import fonts */
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/* app/resources/app.css */
+
+@import url('../widgets/css/MapWidget.css');
+@import url('../widgets/css/LayerWidget.css');
+@import url('../widgets/css/BasemapWidget.css');
+
+html,
+body,
+#mainContainer {
+    height: 100%;
+    margin: 0;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+body {
+    font-size: 16px;
+}
+
+/* Top Container */
+
+#topDiv {
+    margin: 0;
+    padding: 10px 0 13px 0;
+    background-color: #007ac2;
+    color: ghostwhite;
+}
+#topDiv>* {
+    margin: 0;
+    padding: 0;
+}
+#title {
+    font-size: 2.5em;
+    line-height: 40px;
+    text-align: center;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+#logoLeft {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: visible;
+    height: auto;
+    background-color: ghostwhite;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 2px 1% 0 1%;
+    border-bottom: 5px solid #73AD21;
+    border-right: 5px solid #73AD21;
+}
+#logo {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    overflow: visible;
+    height: auto;
+    background-color: ghostwhite;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 2px 1% 0 1%;
+    border-bottom: 4px solid #73AD21;
+    border-left: 4px solid #73AD21;
+}
+
+/* Footer Container */
+
+#footerDiv>p {
+    font-size: 12px;
+    text-align: right;
+    margin: 0;
+    margin-right: 10px;
+    height: 15px;
+}
+#footerDiv {
+    margin: 0;
+    padding: 0;
+    background-color: #007ac2;
+    color: ghostwhite;
+}
+
+/* Sidebar Container */
+
+#sidebarDiv {
+    width: 300px;
+    border-left: 5px solid #007ac2;
+    border-right: 5px solid #007ac2;
+    background-color: ghostwhite;
+}
+#sidebarToolbar {
+    overflow-y: auto !important;
+    width: 275px;
+}
+.nonModal_underlay {
+    display: none;
+}
+
+/* LCA Select and Tide Level Widget */
+
+#waterLevel {
+    width: 260px;
+    text-align: center;
+    font-size: 20px;
+}
+#fldLevel {
+    text-align: center;
+    font-size: 2em;
+    width: 150px;
+    padding: 0;
+/*    margin: 10px;*/
+    display: inline-block;
+}
+#btnPlus_label,
+#btnMinus_label {
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+}
+
+/* Tooltip container */
+
+.tt {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+
+.tt .ttText {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.tt:hover .ttText {
+    visibility: visible;
+}
+
+/* Horizontal Line */
+
+hr.nice {
+    border: 0;
+    height: 1px;
+    /* Gradient transparent - color - transparent */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.onboardingTxt {
+    font-size: 1.2em;
+}
+.centerButton {
+    text-align: center;
+}
+
+/* Labels for select and filtering selects */
+
+.ddLabel {
+    display: block;
+}
+
+/**************************************/
+
+
+/* Select Box CSS fix for % dropdowns */
+
+
+/**************************************/
+
+.dijitSelect .dijitButtonText {
+    text-align: left;
+    padding-left: 10%;
+}
+.dijitSelectLabel {
+    /*    width: 30%;*/
+    /*    overflow: hidden;*/
+}
+.dijitSelect .dijitArrowButton {
+    width: 5px;
+    padding: 4px 8px 4px 8px;
+}
+@media all and (max-width: 975px) {
+    #logo,
+    #logoLeft {
+        max-width: 20%;
+    }
+    #title {
+        max-width: 60%;
+        margin: 0 auto;
+        font-size: 2em;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+@media all and (max-width: 850px) {
+    #logo,
+    #logoLeft {
+        display: none;
+    }
+    #title {
+        max-width: 100%;
+    }
+}
+@media all and (max-height: 720px) {
+    #topDiv {
+        display: none;
+    }
+}
+@media all and (max-height: 650px) {
+    #mapDiv_zoom_slider {
+        top: 2px;
+        left: 75px;
+    }
+    #homebutton {
+        top: 66px;
+        left: 75px;
+    }
+    #fldControls {
+        top: 2px;
+        left: 0px;
+    }
+}
+@media all and (max-height: 540px) {
+    #mapDiv_zoom_slider {
+        top: 12px;
+        left: 12px;
+    }
+    #homebutton {
+        top: 70px;
+        left: 12px;
+    }
+    #fldControls {
+        display: none;
+    }
+}

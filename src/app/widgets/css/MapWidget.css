@@ -1,0 +1,27 @@
+/* app/widgets/css/MapWidget.css */
+
+#mapDiv {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+#homebutton {
+    position: absolute;
+    top: 90px;
+    left: 18px;
+    z-index: 50;
+}
+#search {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 5px;
+    left: 45px;
+}
+#loadingImg {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+}

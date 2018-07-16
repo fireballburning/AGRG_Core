@@ -1,0 +1,15 @@
+.esriBasemapGallery {
+    min-width: 260px;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+    /*    display: inline-block;*/
+}
+.esriBasemapGalleryNode {
+    width: 120px;
+    /*    height: 150px;*/
+}
+.esriBasemapGalleryLabelContainer {
+    font-size: 14px;
+    max-width: 90%;
+}

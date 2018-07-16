@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>AGRG Core Template</title>
+    <!--    Theme stylesheet-->
+    <link rel="stylesheet" href="//js.arcgis.com/3.23/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="//js.arcgis.com/3.23/dojox/layout/resources/GridContainer.css">
+    <!--    Esri stylesheet-->
+    <link rel="stylesheet" href="//js.arcgis.com/3.23/esri/css/esri.css" />
+    <!--    Main app stylesheet-->
+    <link rel="stylesheet" href="app/resources/app.css" />
+</head>
+
+<body class="claro">
+    <div id="main"></div>
+    <script>
+        dojoConfig = {
+            async: true,
+            packages: [{
+                name: "app",
+                location: location.pathname.replace(/\/[^/]+$/, '') + '/app'
+            }]
+        }
+
+    </script>
+    <script src="//js.arcgis.com/3.23/"></script>
+    <script>
+        require(["app/main"]);
+
+    </script>
+</body>
+
+</html>
